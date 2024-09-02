@@ -1,0 +1,291 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.text-primary {
+    color: #8C52FF !important;
+}
+
+.bg-primary {
+    background-color: #8C52FF !important;
+}
+
+.text-shadow{
+    text-shadow: #2200668a 5px 5px 20px;
+}
+
+
+.btn-primary {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #8C52FF;
+    color: #fff;
+    font-size: 1.25rem !important;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #651bf8;
+    transform: scale(102%);
+}
+
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 1050;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show the menu when the collapse is open */
+.fullscreen-menu.show {
+    transform: translateX(0);
+}
+
+/* Style for the close button */
+.fullscreen-menu .close-btn {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Ensure the navbar toggler is on top */
+.navbar-toggler {
+    z-index: 1100;
+}
+
+.active {
+    color: #8C52FF !important;
+}
+
+/* Hide the fullscreen menu by default on larger screens */
+@media (min-width: 992px) {
+    .fullscreen-menu {
+        display: none;
+    }
+}
+
+/* Dropdown animation */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar default padding */
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: padding 0.3s ease;
+}
+
+/* Shrinked navbar padding */
+.navbar.shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* General styles for the banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this value based on your needs */
+    overflow: hidden;
+}
+
+.banner-text{
+    margin-top: 350px;
+    line-height: 10px;
+}
+
+.banner-text h2{
+font-size: 4rem;
+}
+
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+.desktop-video {
+    display: none;
+}
+
+.mobile-video {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .desktop-video {
+        display: block;
+    }
+
+    .mobile-video {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop-video {
+        display: none;
+    }
+
+    .mobile-video {
+        display: block;
+    }
+
+    .banner-text h2{
+        font-size: 2rem;
+        }
+
+.banner-text{
+    margin-top: 200px;
+}
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 25%;
+    top: 25%;
+    width: 50%; /* Full width */
+    height: fit-content; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgb(255, 255, 255); /* Black w/ opacity */
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.popup h2{
+font-size: 2rem;
+}
+
+.popup input{
+margin: 5px 0px 10px 0px;    }
+
+.popup .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup .close:hover,
+.popup .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.custom-select{
+    border: none;
+}
