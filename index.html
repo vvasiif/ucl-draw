@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoubleMorgan</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <style>
-      
+
     </style>
 </head>
+
 <body>
+    <button id="backToTopBtn" title="Go to top">↑</button>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 fixed-top">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img height="40px" src="assets/logo-black.png" alt=""></a>
 
             <!-- Toggle button for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Desktop Navbar links -->
+
             <div class="collapse navbar-collapse justify-content-end d-none d-lg-block">
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active roboto-bold" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-                            <li><a class="dropdown-item roboto-bold" href="#">Submenu 1</a></li>
-                            <li><a class="dropdown-item roboto-bold" href="#">Submenu 2</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active roboto-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-                            <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Services</a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="#">Submenu 1</a></li>
                             <li><a class="dropdown-item" href="#">Submenu 2</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cryptovsummit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Metavsummit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
+
+
         </div>
 
         <!-- Fullscreen Navbar links for mobile -->
@@ -63,16 +87,41 @@
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                        <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cryptovsummit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Metavsummit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
-            <span class="close-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">&times;</span>
+
+            <span class="close-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">&times;</span>
         </div>
     </nav>
 
@@ -82,84 +131,110 @@
             <source src="assets/web.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    
+
         <!-- Mobile Video -->
         <video autoplay muted loop class="background-video mobile-video">
             <source src="assets/mobile.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    
+
         <div class="container banner-text text-left">
-            <h2 class="text-light roboto-black text-shadow">Dubai's Leading Future<br>Tech Investment Advisory Firm</h2><br><br>
-            <a class="btn-primary mt-5" href="#" onclick="openModal()">Register To Meet Investors/Partners UAE</a>
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <h2 class="text-light tinos-bold text-shadow">Dubai's Leading Future Tech Investment Advisory Firm
+                    </h2>
+                    <br><br>
+                    <a class="btn-primary mt-5" href="#" onclick="openModal()">Meet Investors In UAE</a>
+                </div>
+            </div>
+
             <div id="myModal" class="popup">
                 <span class="close" onclick="closeModal()">&times;</span>
-                <h2 class="text-center">Inquiry Form</h2>
-            
+                <h2 class="text-center tinos-regular">Inquiry Form</h2>
+
                 <form action="contactsendemail" method="POST" id="contactForm" autocomplete="off">
                     <div class="container mt-5">
                         <div class="row">
-                            <div class="col-6">
+                            <div id="formSection">
                                 <!-- First Column -->
                                 <div class="form-group">
-                                    <label class="text-primary" for="contact-name">Name:</label>
-                                    <input type="text" class="form-control" required name="name" id="contact-name">
+                                    <!-- <label class="text-primary" for="contact-name">Name:</label> -->
+                                    <input type="text" class="form-control" required name="name" id="contact-name"
+                                        placeholder="Name">
                                 </div>
                                 <div class="form-group">
-                                    <label class="mt-2 text-primary" for="contact-email">Email Address:</label>
-                                    <input type="email" class="form-control" required name="email" id="contact-email">
+                                    <!-- <label class="mt-2 text-primary" for="contact-email">Email Address:</label> -->
+                                    <input type="email" class="form-control" required name="email" id="contact-email"
+                                        placeholder="E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <label class="mt-2 text-primary" for="phone">Phone Number:</label>
+                                    <!-- <label class="mt-2 text-primary" for="phone">Phone Number:</label> -->
                                     <div class="input-group">
                                         <select class="form-select" id="country-code" aria-label="Country code">
-                                          <option value="+1" selected>+1 (US)</option>
-                                          <option value="+44">+44 (UK)</option>
-                                          <option value="+91">+91 (IN)</option>
+                                            <option value="+1" selected>+1 (US)</option>
+                                            <option value="+44">+44 (UK)</option>
+                                            <option value="+91">+91 (IN)</option>
                                         </select>
-                                        <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
-                                      </div>
+                                        <input type="text" class="form-control" placeholder="Phone number"
+                                            aria-label="Phone number">
+                                    </div>
                                 </div>
-                                <button type="button" id="investmentButton" class="btn mt-3 btn-primary">Looking for Investment?</button>
-                                <button type="button" id="clientsButton" class="btn mt-3 btn-primary">Looking for Clients?</button>
+                                <button type="button" id="investmentButton" class="btn mt-3 btn-primary">Looking for
+                                    Investment?</button>
+                                <button type="button" id="clientsButton" class="btn mt-3 btn-primary">Looking for
+                                    Clients?</button>
                             </div>
-                            <div class="col-6" id="investmentSection" style="display: none;">
+                            <div id="investmentSection" style="display: none;">
                                 <!-- Investment Section -->
                                 <div class="form-group">
-                                    <label class=" text-primary" for="contact-amount">How much do you need to raise?</label>
-                                    <input type="number" class="form-control" placeholder="$" name="amount" id="contact-amount">
+                                    <label class="text-primary" for="contact-amount">How much do you need to
+                                        raise?</label>
+                                    <input type="number" class="form-control mt-2" placeholder="$" name="amount"
+                                        id="contact-amount">
                                 </div>
                                 <div class="form-group">
-                                    <label class="mt-2 text-primary" for="contact-raised">How much have you raised already? (Amount in $ and Date)</label>
-                                    <input type="text" class="form-control" placeholder="Ignore if you haven't raised yet." name="raised" id="contact-raised">
+                                    <label class="mt-2 text-primary" for="contact-raised">How much have you raised
+                                        already?</label>
+                                    <input type="text" class="form-control mt-2"
+                                        placeholder="Ignore if you haven't raised yet." name="raised"
+                                        id="contact-raised">
                                 </div>
                                 <div class="form-group">
-                                    <label class="mt-2 text-primary" for="contact-funds">When do you need to raise funds by?</label>
-                                    <input type="date" class="form-control" name="funds_date" id="contact-funds" min="<?php echo date('Y-m-d'); ?>">
+                                    <label class="mt-2 text-primary" for="contact-funds">When do you need to raise funds
+                                        by?</label>
+                                    <input type="date" class="form-control mt-2" name="funds_date" id="contact-funds"
+                                        min="<?php echo date('Y-m-d'); ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="mt-2 text-primary" for="contact-dubai">When can you be in UAE?</label>
-                                    <input type="date" class="form-control" name="dubai_date" id="contact-dubai" min="<?php echo date('Y-m-d'); ?>">
+                                    <input type="date" class="form-control mt-2" name="dubai_date" id="contact-dubai"
+                                        min="<?php echo date('Y-m-d'); ?>">
                                 </div>
                                 <button type="submit" class="btn btn-primary mt-3">Send</button>
                             </div>
-                            <div class="col-6" id="clientsSection" style="display: none;">
+                            <div id="clientsSection" style="display: none;">
                                 <!-- Clients Section -->
                                 <div class="form-group">
-                                    <label class="text-primary" for="client-size">What should be the value of the client you're looking for?</label>
-                                    <input type="text" class="form-control" name="value" id="client-size">
+                                    <label class="text-primary" for="client-size">What should be the value of the
+                                        client?</label>
+                                    <input type="text" class="form-control mt-2" name="value" id="client-size">
                                 </div>
                                 <div class="form-group">
-                                    <label class="mt-2 text-primary" for="client-revenue">What's your current revenue?</label>
-                                    <input type="number" class="form-control" placeholder="$" name="revenue" id="client-revenue">
+                                    <label class="mt-2 text-primary" for="client-revenue">What's your current
+                                        revenue?</label>
+                                    <input type="number" class="form-control mt-2" placeholder="$" name="revenue"
+                                        id="client-revenue">
                                 </div>
                                 <div class="form-group">
-                                    <label class="mt-2 text-primary" for="client-deadline">When do you need client by?</label>
-                                    <input type="date" class="form-control" name="clients_date" id="client-deadline" min="<?php echo date('Y-m-d'); ?>">
+                                    <label class="mt-2 text-primary" for="client-deadline">When do you need client
+                                        by?</label>
+                                    <input type="date" class="form-control mt-2" name="clients_date"
+                                        id="client-deadline" min="<?php echo date('Y-m-d'); ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="mt-2 text-primary" for="client-uae">When can you be in UAE?</label>
-                                    <input type="date" class="form-control" name="dubai_date2" id="client-uae" min="<?php echo date('Y-m-d'); ?>">
+                                    <input type="date" class="form-control mt-2" name="dubai_date2" id="client-uae"
+                                        min="<?php echo date('Y-m-d'); ?>">
                                 </div>
                                 <button type="submit" class="btn btn-primary mt-3">Send</button>
                             </div>
@@ -169,15 +244,398 @@
             </div>
         </div>
     </div>
+
+    <section class="background-section">
+        <div class="content">
+            <h1 class="text-dark tinos-bold text-center">About <em class="text-primary">DoubleMorgan</em></h1>
+            <h4>DoubleMorgan is an advisory and consulting company that specializes in helping future technology
+                companies (Blockchain & Crypto, Metaverse, FinTech, and AI) to meet Investors under one roof for them to
+                be able to create long-term business relationships.</h4>
+            <a class="btn-primary mt-5" href="#">LEARN MORE</a>
+        </div>
+    </section>
+
+    <section class="services-stats">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 stats">
+
+
+                    <div class="stat-box">
+                        <h2 class="text-center tinos-bold">$100m</h2>
+                        <h5 class="text-center">Assets Under Management</h5>
+                    </div>
+                    <div class="stat-box">
+                        <h2 class="text-center tinos-bold">650+</h2>
+                        <h5 class="text-center">Investments</h5>
+                    </div>
+                    <div class="stat-box">
+                        <h2 class="text-center tinos-bold">10+</h2>
+                        <h5 class="text-center">Flagship Funds</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 services">
+                    <section class="services py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="text-dark tinos-bold text-left">Our <em
+                                            class="text-primary">Services</em></h1>
+
+                                    <hr class="border-secondary">
+
+
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <h4 class="text-primary">Investment Advisory</h4>
+                                            <p class="text-muted">DoubleMorgan has been helping growth stage startups
+                                                and established companies the the future tech industries (blockchain &
+                                                crypto, fintech, metaverse and A.I) raise over $100M in the last 7 years
+                                                from UAE & Middle Eastern Investors.</p>
+                                        </li>
+                                        <hr class="border-secondary">
+
+                                        <li class="mb-3">
+                                            <h4 class="text-primary">Private Corporate Events</h4>
+                                            <p class="text-muted">DoubleMorgan runs private events for companies that
+                                                are established but need to make a bigger impact on the market in order
+                                                to gain large contracts with corporations & governments in the UAE.</p>
+                                        </li>
+                                        <hr class="border-secondary">
+
+                                        <li class="mb-3">
+                                            <h4 class="text-primary">Advertising in Blockchain</h4>
+                                            <p class="text-muted">Blockchain technology offers a more inventive
+                                                experience than traditional marketing & advertising. We help startups
+                                                and companies understand new web3 platforms and how to build their
+                                                advertising strategy.</p>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="btn btn-primary mt-3">LEARN MORE</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="events-section">
+        <div class="container">
+            <h1 class="text-dark tinos-bold text-left">Our <em class="text-primary">Flagship</em> Events</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="event-card">
+                        <img height="30px" src="assets/mvs.png" alt="Event 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Metavsummit is the largest investor and strategic partner event that
+                                specializes in helping Web 3.0 Companies (Blockchain, Metaverse and NFTs) and Investors
+                                meet under one roof for them to be able to create long-term business relationships.</h5>
+
+                            <a href="#" class="btn btn-primary mt-3">VISIT EVENT SITE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="event-card">
+                        <img height="30px" src="assets/cvs.png" Event 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Cryptovsummit is the largest investor and strategic partner event
+                                based in Dubai that helps crypto companies build long-term business relationships. It
+                                offers key networking opportunities and insights into the latest cryptocurrency
+                                innovations.</h5>
+
+                            <a href="#" class="btn btn-primary mt-3">VISIT EVENT SITE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container mt-5">
+        <h1 class="text-dark tinos-bold text-center">Our <em class="text-primary">Clients</em></h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card client-card">
+                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="blogs-section py-5"
+        style="background-image: url('assets/bg-3.webp'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column: Blog List -->
+                <div class="col-lg-6">
+                    <h1 class="text-dark tinos-bold text-left">Latest
+                        <em class="text-primary"> Blogs</em>
+                    </h1>
+            
+                    <!-- Blog Card 1 -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the UAE?</h4>
+                            <p class="card-text">
+                                I provided exceptional value. -I go all in with helping them restructure their family
+                                offices.-I go all in with helping them market their businesses.. <a href="" class="">Read more</a>
+                            </p>
+                           
+                        </div>
+                    </div>
+            
+                    <!-- Blog Card 2 -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Time to Sell the Business and Sip Cocktails into the Sunset?</h4>
+                            <p class="card-text">
+                                I provided exceptional value. -I go all in with helping them restructure their family
+                                offices.-I go all in with helping them market their businesses.. <a href="" class="">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Blog Card 3 -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the UAE?</h4>
+                            <p class="card-text">
+                                I provided exceptional value. -I go all in with helping them restructure their family
+                                offices.-I go all in with helping them market their businesses.. <a href="" class="">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <a href="/blogs" class="btn btn-primary">View All Blogs</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="image-section py-5">
+        <div class="container">
+            <h1 class="text-dark tinos-bold text-center">DoubleMorgan <em class="text-primary">Summits</em></h1>
+
+            <div class="row mt-4">
+                <!-- First Column: Image 1 -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="assets/summit1.webp" alt="Image 1" class="img-fluid w-100">
+                </div>
+                <!-- Second Column: Image 2 -->
+                <div class="col-12 col-md-6">
+                    <img src="assets/summit2.webp" alt="Image 2" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
     
 
-    <!-- Bootstrap JS and dependencies -->
+    <div class="logo-slider mt-5">
+        <h1 class="text-dark tinos-bold text-center">As <em class="text-primary">Seen</em> On</h1>
+
+        <div class="logo-slider-inner customer-logos mt-5">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+        </div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Logo Slider Script -->
+    <script type="text/javascript" id="logo-slider-script">
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+
+
+
+
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="form-container">
+                        <h1 class="text-dark tinos-bold text-center">Contact <em class="text-primary">Us</em></h1>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class=" text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Office Location -->
+                <div class="col-12 col-md-4 mb-4">
+                    <img src="assets/logo-white.png" alt="Logo" class="img-fluid mb-2">
+                    <form class="form-inline">
+                        <h5 class="tinos-regular mt-3">Subscribe to receive updates</h5>
+                        <input type="email" class="form-control mr-2" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-2 mb-2">
+
+                </div>
+
+                <!-- People Driven -->
+                <div class="col-12 col-md-2 mb-2">
+                    <h5 class="tinos-bold text-primary">People Driven</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About DoubleMorgan</a></li>
+                        <li><a href="#" class="text-white">Talent Programs</a></li>
+                        <li><a href="#" class="text-white">Our Team</a></li>
+                        <li><a href="#" class="text-white">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Private Equity -->
+                <div class="col-12 col-md-2 mb-2">
+                    <h5 class="tinos-bold text-primary">Private Equity</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Portfolio</a></li>
+                        <li><a href="#" class="text-white">Our Investing</a></li>
+                        <li><a href="#" class="text-white">Our Impact</a></li>
+                        <li><a href="#" class="text-white">News & Insights</a></li>
+                    </ul>
+                </div>
+
+                <!-- General Info -->
+                <div class="col-12 col-md-2 mb-2">
+                    <h5 class="tinos-bold text-primary">General Info</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i><i
+                                    class="fa-brands fa-instagram mx-2"></i></a></li><br>
+                        <p>Office Location:<br>1234 Street Name<br>City, State, ZIP</p>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Border -->
+            <hr class="border-secondary">
+
+            <!-- Terms and Copyright -->
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p><a href="#" class="text-white underline">Terms, Conditions & Privacy Policy</a></p>
+                    <p>© Double Morgan 2024. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <script>
         // Shrink Navbar on Scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             var navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('shrink');
@@ -187,30 +645,60 @@
         });
 
         function openModal() {
-    document.getElementById('myModal').style.display = 'block';
-}
+            document.getElementById('myModal').style.display = 'block';
+        }
 
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-}
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+            document.getElementById('formSection').style.display = 'block';
+            document.getElementById('clientsSection').style.display = 'none';
+            document.getElementById('investmentSection').style.display = 'none';
+        }
 
-document.getElementById('investmentButton').onclick = function() {
-    document.getElementById('investmentSection').style.display = 'block';
-    document.getElementById('clientsSection').style.display = 'none';
-};
+        document.getElementById('investmentButton').onclick = function () {
+            document.getElementById('investmentSection').style.display = 'block';
+            document.getElementById('clientsSection').style.display = 'none';
+            document.getElementById('formSection').style.display = 'none';
 
-document.getElementById('clientsButton').onclick = function() {
-    document.getElementById('clientsSection').style.display = 'block';
-    document.getElementById('investmentSection').style.display = 'none';
-};
+        };
 
-// Close the modal if the user clicks outside of it
-window.onclick = function(event) {
-    if (event.target == document.getElementById('myModal')) {
-        closeModal();
-    }
-}
+        document.getElementById('clientsButton').onclick = function () {
+            document.getElementById('clientsSection').style.display = 'block';
+            document.getElementById('investmentSection').style.display = 'none';
+            document.getElementById('formSection').style.display = 'none';
+
+        };
+
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+
+
+        // Get the button
+        let backToTopBtn = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        backToTopBtn.addEventListener("click", function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+
+
 
     </script>
 </body>
+
 </html>
