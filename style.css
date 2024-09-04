@@ -4,7 +4,7 @@
     font-style: normal;
 }
 
-*{
+* {
     /* border: 1px solid red; */
 
 }
@@ -105,6 +105,29 @@
     font-style: italic;
 }
 
+.primary-hr {
+    border: 0;
+    height: 2px; /* Adjust thickness */
+    background-color: #651bf8; /* Custom color */
+    margin: 50px 0px;
+}
+
+.no-hr {
+    border: 0;
+    height: 2px; /* Adjust thickness */
+    background-color: #651bf800; /* Custom color */
+    margin: 50px 0px;
+}
+
+
+.mt-70{
+    padding-top: 70px;
+}
+
+.mb-70{
+    padding-bottom: 70px;
+}
+
 
 a {
     text-decoration: none;
@@ -139,6 +162,8 @@ a {
     background-color: #651bf8;
     transform: scale(102%);
 }
+
+
 
 #backToTopBtn {
     position: fixed;
@@ -314,7 +339,8 @@ a {
     }
 
     .banner-text {
-        margin-top: 150px;
+        margin-top: 200px;
+        width: 90%;
     }
 }
 
@@ -381,7 +407,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
     background-image: linear-gradient(to bottom, #8c52ff2a, #fff);
     /* background-size: cover; */
     /* background-positio; */
@@ -394,6 +420,28 @@ a {
 .content {
     width: 60%;
     /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+}
+
+
+@media (max-width: 767.98px) {
+    .background-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        background-image: linear-gradient(to bottom, #8c52ff2a, #fff);
+        /* background-size: cover; */
+        /* background-positio; */
+        background-repeat: no-repeat;
+        color: rgb(43, 43, 43);
+        text-align: center;
+        padding: 5px;
+    }
+
+    .content {
+        width: 90% !important;
+    }
+
 }
 
 
@@ -511,6 +559,11 @@ a {
 
 
 
+/* .clients {
+    margin-top: 100px;
+} */
+
+
 .client-card {
     border-radius: 20px;
 
@@ -518,29 +571,21 @@ a {
     background-image: linear-gradient(to bottom, #8c52ff2a, #8c52ff33);
     transition: all 0.3s ease;
     border: none;
-    /* Remove default border */
     height: 200px;
-    /* Set fixed height */
     display: flex;
-    /* Use Flexbox for centering */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     overflow: hidden;
-    /* Hide any overflowing content */
 }
 
-.card-img-top {
+/* .card-img-top {
     max-height: 100%;
-    /* Ensure the image fits within the card */
     max-width: 100%;
-    /* Ensure the image fits within the card */
-}
+} */
 
-.events-section {
+/* .events-section {
     padding: 60px 0;
-}
+} */
 
 .event-card {
     border-radius: 8px;
@@ -568,13 +613,8 @@ a {
 }
 
 .stats {
-    /* background: url('assets/bg-2.webp') no-repeat right center;
-    background-size: cover; */
     height: 100%;
-    /* Adjust if necessary */
     padding: 20px;
-    /* Adjust as needed */
-
 }
 
 .stat-box {
@@ -595,18 +635,37 @@ a {
 
 }
 
-/* Ensure responsiveness if needed */
 @media (max-width: 767.98px) {
+
+
     .stats {
         background-position: center;
     }
 
     .services-stats {
+        margin-top: 70px;
         background: url('assets/bg-2.webp') no-repeat right center;
-        background-size: 100%;
+        background-size: 120%;
         background-position: center;
+        background-position-y: top;
     }
-    
+
+    .stat-box {
+        border-radius: 20px;
+        margin-top: 10px;
+        height: 120px;
+        width: 50%;
+        background-color: #8C52FF;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services {
+        margin-top: 30px;
+    }
+
 }
 
 .image-section img {
@@ -620,6 +679,24 @@ a {
 
 
 
+.blogs-section {
+    background-image: url('assets/bg-3.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 767.98px) {
+    .blogs-section {
+        background-image: url('assets/bg-3.webp');
+        background-size: cover;
+        background-position-x: right;
+    }
+
+    .image-section {
+        margin-top: 70px;
+        border-radius: 20px;
+    }
+}
 
 
 .contact-section {
