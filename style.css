@@ -4,6 +4,11 @@
     font-style: normal;
 }
 
+*{
+    /* border: 1px solid red; */
+
+}
+
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -191,15 +196,16 @@ a {
 
 /* Style for the close button */
 .fullscreen-menu .close-btn {
-    position: absolute;
-    bottom: 20px;
+    /* position: absolute; */
+    top: 20px;
+    right: 20px;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 /* Ensure the navbar toggler is on top */
 .navbar-toggler {
-    z-index: 1100;
+    z-index: 1;
 }
 
 .active {
