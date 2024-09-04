@@ -600,6 +600,13 @@ a {
     .stats {
         background-position: center;
     }
+
+    .services-stats {
+        background: url('assets/bg-2.webp') no-repeat right center;
+        background-size: 100%;
+        background-position: center;
+    }
+    
 }
 
 .image-section img {
