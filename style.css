@@ -9,6 +9,10 @@
 
 }
 
+em {
+    font-style: normal !important;
+}
+
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -107,24 +111,28 @@
 
 .primary-hr {
     border: 0;
-    height: 2px; /* Adjust thickness */
-    background-color: #651bf8; /* Custom color */
+    height: 2px;
+    /* Adjust thickness */
+    background-color: #651bf8;
+    /* Custom color */
     margin: 50px 0px;
 }
 
 .no-hr {
     border: 0;
-    height: 2px; /* Adjust thickness */
-    background-color: #651bf800; /* Custom color */
+    height: 2px;
+    /* Adjust thickness */
+    background-color: #651bf800;
+    /* Custom color */
     margin: 50px 0px;
 }
 
 
-.mt-70{
+.mt-70 {
     padding-top: 70px;
 }
 
-.mb-70{
+.mb-70 {
     padding-bottom: 70px;
 }
 
@@ -204,7 +212,7 @@ a {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100vw;
+    width: 50vw;
     background-color: white;
     z-index: 1050;
     transform: translateX(100%);
@@ -277,18 +285,69 @@ a {
     padding-bottom: 0.5rem;
 }
 
-/* .banner {
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler-icon {
+    background: url('data:image/svg+xml;charset=utf8,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3e%3c/svg%3e') center / 100% no-repeat;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .navbar-toggler:active {
+    background-color: #8C52FF; /* Purple color */
+  }
+  
+  .navbar-toggler span {
+    display: block;
+    width: 2rem;
+    height: 2px;
+    background-color: #8C52FF; /* Purple color */
     position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-} */
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-toggler span:before,
+  .navbar-toggler span:after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2px;
+    background-color: #8C52FF; /* Purple color */
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-toggler span:before {
+    top: -6px;
+  }
+  
+  .navbar-toggler span:after {
+    top: 6px;
+  }
+  
+  .navbar-toggler.collapsed span {
+    background-color: #8C52FF; /* Purple color */
+  }
+  
+  .navbar-toggler.collapsed span:before,
+  .navbar-toggler.collapsed span:after {
+    background-color: #8C52FF; /* Purple color */
+  }
+  
 
 .banner {
     position: relative;
     height: 100vh;
     display: flex;
-    align-items: center; /* Vertically centers the content */
+    align-items: center;
+    /* Vertically centers the content */
 }
 
 .banner-text h2 {
@@ -397,6 +456,10 @@ a {
     /* Could be more or less, depending on screen size */
 }
 
+
+.grad-bg{
+    background-image: linear-gradient(to top, #8c52ff7a, #fff);
+}
 
 .background-section {
     display: flex;
@@ -648,8 +711,8 @@ a {
 
     .stat-box {
         border-radius: 20px;
-        margin-bottom: 10px;
-        height: 120px;
+        margin: 5px 0px;
+        height: 112px;
         width: 50%;
         background-color: #8C52FF;
         color: #ffffff;
@@ -673,8 +736,6 @@ a {
 }
 
 
-
-
 .blogs-section {
     background-image: url('assets/bg-3.webp');
     background-size: cover;
@@ -695,10 +756,30 @@ a {
 }
 
 
+.aboutus-section {
+    background-image: url('assets/bg-4.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 767.98px) {
+    .aboutus-section {
+        background-size: cover;
+        background-position-x: right;
+    }
+}
+
+.card {
+    background: #f5f0ff9d !important;
+    backdrop-filter: blur(10px);
+}
+
+
+
+
 .contact-section {
     background-image: linear-gradient(to top, #8c52ff2a, #fff);
     background-size: cover;
-    padding: 60px 0;
     color: #000000;
 }
 
@@ -707,6 +788,27 @@ a {
     /* semi-transparent background */
     padding: 30px;
     border-radius: 8px;
+}
+
+.card-img-custom {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.related-posts img {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+.related-posts .card {
+    margin-bottom: 20px;
 }
 
 /* footer */
