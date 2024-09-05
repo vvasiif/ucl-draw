@@ -153,7 +153,7 @@ a {
     border-radius: 25px;
     background-color: #8C52FF;
     color: #fff;
-    font-size: 1.15rem !important;
+    font-size: 1rem !important;
     outline: none;
     border: none;
     text-align: center;
@@ -352,27 +352,16 @@ a {
 
 .popup {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 50%;
-    /* Center horizontally */
     top: 45%;
-    /* Center vertically */
     width: 400px;
-    /* Set width */
     height: fit-content;
-    /* Adjust height to content */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(255, 255, 255);
-    /* Background color */
     padding: 20px;
-    border-radius: 30px;
     transform: translate(-50%, -50%);
-    /* Center popup */
 }
 
 
@@ -425,7 +414,6 @@ a {
 
 .content {
     width: 60%;
-    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
 }
 
 
