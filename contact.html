@@ -83,7 +83,7 @@
         <!-- Fullscreen Navbar links for mobile -->
         <div class="fullscreen-menu collapse" id="navbarNav">
             <span class="close-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">&times;</span>
+                aria-expanded="false" aria-label="Toggle navigation">&times;</span>
             <ul class="navbar-nav text-center">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
@@ -122,18 +122,16 @@
                 </li>
             </ul>
 
-         
+
         </div>
     </nav>
 
     <div class="banner">
-        <!-- Desktop Video -->
         <video autoplay muted loop class="background-video desktop-video">
             <source src="assets/darkweb.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-        <!-- Mobile Video -->
         <video autoplay muted loop class="background-video mobile-video">
             <source src="assets/darkmobile.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -143,116 +141,113 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 col-sm-12">
                     <h2 class="text-light tinos-bold">Dubai's Leading Future Tech Investment Advisory Firm
-                    </h2>
-                    <br><br>
+                    </h2><br>
                     <a class="btn-primary mt-5" href="#" onclick="openModal()">Meet Investors In UAE</a>
                 </div>
-            </div>
-
-            <div id="myModal" class="popup">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2 class="text-center tinos-regular">Inquiry Form</h2>
-
-                <form action="contactsendemail" method="POST" id="contactForm" autocomplete="off">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div id="formSection">
-                                <!-- First Column -->
-                                <div class="form-group">
-                                    <!-- <label class="text-primary" for="contact-name">Name:</label> -->
-                                    <input type="text" class="form-control" required name="name" id="contact-name"
-                                        placeholder="Name">
-                                </div>
-                                <div class="form-group">
-                                    <!-- <label class="mt-2 text-primary" for="contact-email">Email Address:</label> -->
-                                    <input type="email" class="form-control" required name="email" id="contact-email"
-                                        placeholder="E-mail">
-                                </div>
-                                <div class="form-group">
-                                    <!-- <label class="mt-2 text-primary" for="phone">Phone Number:</label> -->
-                                    <div class="input-group">
-                                        <select class="form-select" id="country-code" aria-label="Country code">
-                                            <option value="+1" selected>+1 (US)</option>
-                                            <option value="+44">+44 (UK)</option>
-                                            <option value="+91">+91 (IN)</option>
-                                        </select>
-                                        <input type="text" class="form-control" placeholder="Phone number"
-                                            aria-label="Phone number">
-                                    </div>
-                                </div>
-                                <button type="button" id="investmentButton" class="btn mt-3 btn-primary">Looking for
-                                    Investment?</button>
-                                <button type="button" id="clientsButton" class="btn mt-3 btn-primary">Looking for
-                                    Clients?</button>
-                            </div>
-                            <div id="investmentSection" style="display: none;">
-                                <!-- Investment Section -->
-                                <div class="form-group">
-                                    <label class="text-primary" for="contact-amount">How much do you need to
-                                        raise?</label>
-                                    <input type="number" class="form-control mt-2" placeholder="$" name="amount"
-                                        id="contact-amount">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mt-2 text-primary" for="contact-raised">How much have you raised
-                                        already?</label>
-                                    <input type="text" class="form-control mt-2"
-                                        placeholder="Ignore if you haven't raised yet." name="raised"
-                                        id="contact-raised">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mt-2 text-primary" for="contact-funds">When do you need to raise funds
-                                        by?</label>
-                                    <input type="date" class="form-control mt-2" name="funds_date" id="contact-funds"
-                                        min="<?php echo date('Y-m-d'); ?>">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mt-2 text-primary" for="contact-dubai">When can you be in UAE?</label>
-                                    <input type="date" class="form-control mt-2" name="dubai_date" id="contact-dubai"
-                                        min="<?php echo date('Y-m-d'); ?>">
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-3">Send</button>
-                            </div>
-                            <div id="clientsSection" style="display: none;">
-                                <!-- Clients Section -->
-                                <div class="form-group">
-                                    <label class="text-primary" for="client-size">What should be the value of the
-                                        client?</label>
-                                    <input type="text" class="form-control mt-2" name="value" id="client-size">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mt-2 text-primary" for="client-revenue">What's your current
-                                        revenue?</label>
-                                    <input type="number" class="form-control mt-2" placeholder="$" name="revenue"
-                                        id="client-revenue">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mt-2 text-primary" for="client-deadline">When do you need client
-                                        by?</label>
-                                    <input type="date" class="form-control mt-2" name="clients_date"
-                                        id="client-deadline" min="<?php echo date('Y-m-d'); ?>">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mt-2 text-primary" for="client-uae">When can you be in UAE?</label>
-                                    <input type="date" class="form-control mt-2" name="dubai_date2" id="client-uae"
-                                        min="<?php echo date('Y-m-d'); ?>">
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-3">Send</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
 
+    <div id="myModal" class="popup">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="text-center tinos-regular">Inquiry Form</h2>
+
+        <form action="contactsendemail" method="POST" id="contactForm" autocomplete="off">
+            <div class="container mt-5">
+                <div class="row">
+                    <div id="formSection">
+                        <div class="form-group">
+                            <input type="text" class="form-control" required name="name" id="contact-name"
+                                placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" required name="email" id="contact-email"
+                                placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select class="form-select" id="country-code" aria-label="Country code">
+                                    <option value="+1" selected>+1 (US)</option>
+                                    <option value="+44">+44 (UK)</option>
+                                    <option value="+91">+91 (IN)</option>
+                                </select>
+                                <input type="text" class="form-control" placeholder="Phone number"
+                                    aria-label="Phone number">
+                            </div>
+                        </div>
+                        <button type="button" id="investmentButton" class="btn mt-3 btn-primary">Looking for
+                            Investment?</button>
+                        <button type="button" id="clientsButton" class="btn mt-3 btn-primary">Looking for
+                            Clients?</button>
+                    </div>
+                    <div id="investmentSection" style="display: none;">
+                        <!-- Investment Section -->
+                        <div class="form-group">
+                            <label class="text-primary" for="contact-amount">How much do you need to
+                                raise?</label>
+                            <input type="number" class="form-control mt-2" placeholder="$" name="amount"
+                                id="contact-amount">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2 text-primary" for="contact-raised">How much have you raised
+                                already?</label>
+                            <input type="text" class="form-control mt-2" placeholder="Ignore if you haven't raised yet."
+                                name="raised" id="contact-raised">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2 text-primary" for="contact-funds">When do you need to raise funds
+                                by?</label>
+                            <input type="date" class="form-control mt-2" name="funds_date" id="contact-funds"
+                                min="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2 text-primary" for="contact-dubai">When can you be in UAE?</label>
+                            <input type="date" class="form-control mt-2" name="dubai_date" id="contact-dubai"
+                                min="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Send</button>
+                    </div>
+                    <div id="clientsSection" style="display: none;">
+                        <!-- Clients Section -->
+                        <div class="form-group">
+                            <label class="text-primary" for="client-size">What should be the value of the
+                                client?</label>
+                            <input type="text" class="form-control mt-2" name="value" id="client-size">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2 text-primary" for="client-revenue">What's your current
+                                revenue?</label>
+                            <input type="number" class="form-control mt-2" placeholder="$" name="revenue"
+                                id="client-revenue">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2 text-primary" for="client-deadline">When do you need client
+                                by?</label>
+                            <input type="date" class="form-control mt-2" name="clients_date" id="client-deadline"
+                                min="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2 text-primary" for="client-uae">When can you be in UAE?</label>
+                            <input type="date" class="form-control mt-2" name="dubai_date2" id="client-uae"
+                                min="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
 
 
     <section class="background-section">
-        
+
         <div class="content">
             <h1 class="text-dark tinos-bold text-center">About <em class="text-primary">DoubleMorgan</em></h1>
-            <h4 class="mb-3">DoubleMorgan is an advisory and consulting company that specializes in helping future technology
+            <h4 class="mb-3">DoubleMorgan is an advisory and consulting company that specializes in helping future
+                technology
                 companies (Blockchain & Crypto, Metaverse, FinTech, and AI) to meet Investors under one roof for them to
                 be able to create long-term business relationships.</h4>
             <a class="btn-primary mt-5" href="#">LEARN MORE</a>
@@ -316,6 +311,8 @@
                                                 advertising strategy.</p>
                                         </li>
                                     </ul>
+                                    <hr class="border-secondary">
+
 
                                     <a href="#" class="btn btn-primary mt-3">LEARN MORE</a>
 
@@ -341,9 +338,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                     <div class="event-card">
                         <div class="card-body">
-                            <img class="" height="30px" src="assets/mvs.png" alt="Event 1 Image">
+                            <img class="" height="20px" src="assets/mvs.png" alt="Event 1 Image">
 
-                            <h5 class="card-title mt-2">Metavsummit is the largest investor and strategic partner event that
+                            <h5 class=" mt-3">Metavsummit is the largest investor and strategic partner event that
                                 specializes in helping Web 3.0 Companies (Blockchain, Metaverse and NFTs) and Investors
                                 meet under one roof for them to be able to create long-term business relationships.</h5>
 
@@ -354,9 +351,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                     <div class="event-card">
                         <div class="card-body">
-                            <img height="30px" src="assets/cvs.png" Event 2 Image">
+                            <img height="20px" src="assets/cvs.png" Event 2 Image">
 
-                            <h5 class="card-title mt-2">Cryptovsummit is the largest investor and strategic partner event
+                            <h5 class=" mt-3">Cryptovsummit is the largest investor and strategic partner event
                                 based in Dubai that helps crypto companies build long-term business relationships. It
                                 offers key networking opportunities and insights into the latest cryptocurrency
                                 innovations.</h5>
@@ -369,12 +366,31 @@
         </div>
     </section>
 
+
+    <div class="logo-slider">
+        <div class="logo-slider-inner customer-logos">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+            <img src="assets/logo-black.png" alt="Logo 1">
+        </div>
+    </div>
+
+
     <hr class="no-hr">
 
 
     <div class="container ">
         <h1 class="text-dark tinos-bold text-center">Our <em class="text-primary">Companies</em> Portfolio</h1>
-        <p class="text-center">Explore our curated list of investment opportunities. Each company in our portfolio has been carefully selected for its growth potential, innovative solutions, and market presence. Discover why these companies stand out as prime investment choices and learn how they can contribute to your financial goals.</p>
+        <p class="text-center">Explore our curated list of investment opportunities. Each company in our portfolio has
+            been carefully selected for its growth potential, innovative solutions, and market presence. Discover why
+            these companies stand out as prime investment choices and learn how they can contribute to your financial
+            goals.</p>
 
         <div class="row">
             <!-- Company 1 -->
@@ -405,7 +421,8 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="card-text">Description of Company 1, highlighting key features and investment potential.</p>
+                        <p class="card-text">Description of Company 1, highlighting key features and investment
+                            potential.</p>
                         <a href="#" class="btn btn-primary">Inquire</a>
                     </div>
                 </div>
@@ -438,7 +455,8 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="card-text">Description of Company 2, highlighting key features and investment potential.</p>
+                        <p class="card-text">Description of Company 2, highlighting key features and investment
+                            potential.</p>
                         <a href="#" class="btn btn-primary">Inquire</a>
 
                     </div>
@@ -472,7 +490,8 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="card-text">Description of Company 3, highlighting key features and investment potential.</p>
+                        <p class="card-text">Description of Company 3, highlighting key features and investment
+                            potential.</p>
                         <a href="#" class="btn btn-primary">Inquire</a>
                     </div>
                 </div>
@@ -480,11 +499,11 @@
             <div class="text-center mt-2">
                 <a href="#" class="btn btn-primary">More Companies</a>
             </div>
-            
+
         </div>
 
     </div>
-    
+
     <hr class="no-hr">
 
 
@@ -545,45 +564,50 @@
                     <h1 class="text-dark tinos-bold text-left">Latest
                         <em class="text-primary"> Blogs</em>
                     </h1>
-            
+
                     <!-- Blog Card 1 -->
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the UAE?</h4>
+                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the
+                                UAE?</h4>
                             <p class="card-text">
                                 I provided exceptional value. -I go all in with helping them restructure their family
-                                offices.-I go all in with helping them market their businesses.. <a href="" class="">Read more</a>
+                                offices.-I go all in with helping them market their businesses.. <a href=""
+                                    class="">Read more</a>
                             </p>
-                           
+
                         </div>
                     </div>
-            
+
                     <!-- Blog Card 2 -->
                     <div class="card mb-4">
                         <div class="card-body">
                             <h4 class="card-title">Time to Sell the Business and Sip Cocktails into the Sunset?</h4>
                             <p class="card-text">
                                 I provided exceptional value. -I go all in with helping them restructure their family
-                                offices.-I go all in with helping them market their businesses.. <a href="" class="">Read more</a>
+                                offices.-I go all in with helping them market their businesses.. <a href=""
+                                    class="">Read more</a>
                             </p>
                         </div>
                     </div>
-            
+
                     <!-- Blog Card 3 -->
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the UAE?</h4>
+                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the
+                                UAE?</h4>
                             <p class="card-text">
                                 I provided exceptional value. -I go all in with helping them restructure their family
-                                offices.-I go all in with helping them market their businesses.. <a href="" class="">Read more</a>
+                                offices.-I go all in with helping them market their businesses.. <a href=""
+                                    class="">Read more</a>
                             </p>
                         </div>
                     </div>
-            
+
                     <a href="/blogs" class="btn btn-primary">View All Blogs</a>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -608,11 +632,11 @@
             </div>
         </div>
     </section>
-    
+
     <hr class="no-hr">
 
 
-    <div class="logo-slider mt-5">
+    <div class="logo-slider">
         <h1 class="text-dark tinos-bold text-center">As <em class="text-primary">Seen</em> On</h1>
 
         <div class="logo-slider-inner customer-logos mt-5">
@@ -638,9 +662,9 @@
         $(document).ready(function () {
             $('.customer-logos').slick({
                 slidesToShow: 6,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 1500,
                 arrows: false,
                 dots: false,
                 pauseOnHover: false,
@@ -660,7 +684,7 @@
     </script>
 
 
-<hr class="no-hr">
+    <hr class="no-hr">
 
 
 
