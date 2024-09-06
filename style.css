@@ -154,6 +154,20 @@ a {
     color: #8C52FF !important;
 }
 
+.required-asterisk {
+    color: red;
+    font-weight: bold;
+}
+
+.disabled{
+    background-color: grey !important;
+}
+
+.input-group select,
+.input-group input {
+    height: 38px; 
+}
+
 .bg-primary {
     background-color: #8C52FF !important;
 }
@@ -470,14 +484,15 @@ a {
     position: fixed;
     z-index: 1;
     left: 50%;
-    top: 45%;
-    width: 360px;
+    top: 55%;
+    width: 380px;
     height: fit-content;
     overflow: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.842);
     padding: 20px;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
 
 
@@ -898,17 +913,6 @@ footer {
     background-color: #180047;
 }
 
-.form-control{
-    width: 90%;
-}
-
-@media (max-width: 767.98px) {
-    .form-control{
-        width: 100%;
-    }
-    
-
-}
 
 
 

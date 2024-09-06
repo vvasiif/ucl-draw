@@ -19,6 +19,22 @@ function closeModal() {
     document.getElementById('investmentSection').style.display = 'none';
 }
 
+function backModal() {
+    document.getElementById('formSection').style.display = 'block';
+    document.getElementById('clientsSection').style.display = 'none';
+    document.getElementById('investmentSection').style.display = 'none';
+
+    const formFields = document.querySelectorAll('#formSection input, #formSection select, #formSection textarea');
+    formFields.forEach(field => {
+        if (field.type === 'checkbox' || field.type === 'radio') {
+            field.checked = false;
+        } else {
+            field.value = '';
+        }
+    });
+}
+
+
 document.getElementById('investmentButton').onclick = function () {
     document.getElementById('investmentSection').style.display = 'block';
     document.getElementById('clientsSection').style.display = 'none';
@@ -108,6 +124,8 @@ window.addEventListener('load', () => {
 });
 
 
+
+
 $(document).ready(function() {
     // Function to load service based on URL hash
     function loadServiceFromHash() {
@@ -140,4 +158,33 @@ $(document).ready(function() {
         $('#' + serviceId).addClass('active');
         $(this).addClass('active');
     });
+    
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const nameInput = document.getElementById('contact-name');
+    const emailInput = document.getElementById('contact-email');
+    const phoneInput = document.getElementById('phone-number-input'); // Updated ID
+    const investmentButton = document.getElementById('investmentButton');
+    const clientsButton = document.getElementById('clientsButton');
+
+    function checkFormCompletion() {
+        const nameFilled = nameInput.value.trim() !== '';
+        const emailFilled = emailInput.value.trim() !== '';
+        const phoneFilled = phoneInput.value.trim() !== '';
+
+        if (nameFilled && emailFilled && phoneFilled) {
+            investmentButton.disabled = false;
+            clientsButton.disabled = false;
+        } else {
+            investmentButton.disabled = true;
+            clientsButton.disabled = true;
+        }
+    }
+
+    nameInput.addEventListener('input', checkFormCompletion);
+    emailInput.addEventListener('input', checkFormCompletion);
+    phoneInput.addEventListener('input', checkFormCompletion);
+
+    // Initialize button state on page load
+    checkFormCompletion();
 });

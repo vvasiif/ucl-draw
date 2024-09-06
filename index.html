@@ -32,28 +32,70 @@
 
     <div id="content">
 
-    <button id="backToTopBtn" title="Go to top">↑</button>
+        <button id="backToTopBtn" title="Go to top">↑</button>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img height="40px" src="assets/logo-black.png" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img height="40px" src="assets/logo-black.png" alt=""></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 
-            <div class="collapse navbar-collapse justify-content-end d-none d-lg-block">
-                <ul class="navbar-nav">
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Serices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img height="12px" src="assets/mvs.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img height="12px" src="assets/cvs.png" alt=""></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Fullscreen Navbar links for mobile -->
+            <div class="fullscreen-menu collapse" id="navbarNav">
+                <span class="close-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">&times;</span>
+                <ul class="navbar-nav text-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Serices</a>
+                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Clients</a>
@@ -68,7 +110,7 @@
                         <a class="nav-link" href="blogs.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img height="12px" src="assets/mvs.png" alt=""></a>
@@ -76,694 +118,678 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img height="12px" src="assets/cvs.png" alt=""></a>
                     </li>
-                   
+
                 </ul>
+
+
             </div>
+        </nav>
 
+        <div class="banner">
+            <video autoplay muted loop class="background-video desktop-video">
+                <source src="assets/darkweb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-        </div>
+            <video autoplay muted loop class="background-video mobile-video">
+                <source src="assets/darkmobile.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-        <!-- Fullscreen Navbar links for mobile -->
-        <div class="fullscreen-menu collapse" id="navbarNav">
-            <span class="close-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">&times;</span>
-            <ul class="navbar-nav text-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Clients</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Media</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blogs.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img height="12px" src="assets/mvs.png" alt=""></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img height="12px" src="assets/cvs.png" alt=""></a>
-                </li>
-               
-            </ul>
-
-
-        </div>
-    </nav>
-
-    <div class="banner">
-        <video autoplay muted loop class="background-video desktop-video">
-            <source src="assets/darkweb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <video autoplay muted loop class="background-video mobile-video">
-            <source src="assets/darkmobile.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <div class="container banner-text text-left">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 col-sm-12">
-                    <h2 class="text-light tinos-bold">Dubai's Leading Future Tech Investment Advisory Firm
-                    </h2><br>
-                    <a class="btn-primary mt-5" href="#" onclick="openModal()">Meet Investors In UAE</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="myModal" class="popup">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2 class="text-center tinos-regular">Inquiry Form</h2>
-
-        <form action="contactsendemail" method="POST" id="contactForm" autocomplete="off">
-            <div class="container mt-5">
+            <div class="container banner-text text-left">
                 <div class="row">
-                    <div id="formSection">
-                        <div class="form-group">
-                            <input type="text" class="form-control" required name="name" id="contact-name"
-                                placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" required name="email" id="contact-email"
-                                placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <select class="form-select" id="country-code" aria-label="Country code">
-                                    <option value="+1" selected>+1 (US)</option>
-                                    <option value="+44">+44 (UK)</option>
-                                    <option value="+91">+91 (IN)</option>
-                                </select>
-                                <input type="text" class="form-control" placeholder="Phone number"
-                                    aria-label="Phone number">
-                            </div>
-                        </div>
-                        <button type="button" id="investmentButton" class="btn mt-3 btn-primary">Looking for
-                            Investment?</button>
-                        <button type="button" id="clientsButton" class="btn mt-3 btn-primary">Looking for
-                            Clients?</button>
-                    </div>
-                    <div id="investmentSection" style="display: none;">
-                        <!-- Investment Section -->
-                        <div class="form-group">
-                            <label class="text-primary" for="contact-amount">How much do you need to
-                                raise?</label>
-                            <input type="number" class="form-control mt-2" placeholder="$" name="amount"
-                                id="contact-amount">
-                        </div>
-                        <div class="form-group">
-                            <label class="mt-2 text-primary" for="contact-raised">How much have you raised
-                                already?</label>
-                            <input type="text" class="form-control mt-2" placeholder="Ignore if you haven't raised yet."
-                                name="raised" id="contact-raised">
-                        </div>
-                        <div class="form-group">
-                            <label class="mt-2 text-primary" for="contact-funds">When do you need to raise funds
-                                by?</label>
-                            <input type="date" class="form-control mt-2" name="funds_date" id="contact-funds"
-                                min="<?php echo date('Y-m-d'); ?>">
-                        </div>
-                        <div class="form-group">
-                            <label class="mt-2 text-primary" for="contact-dubai">When can you be in UAE?</label>
-                            <input type="date" class="form-control mt-2" name="dubai_date" id="contact-dubai"
-                                min="<?php echo date('Y-m-d'); ?>">
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-3">Send</button>
-                    </div>
-                    <div id="clientsSection" style="display: none;">
-                        <!-- Clients Section -->
-                        <div class="form-group">
-                            <label class="text-primary" for="client-size">What should be the value of the
-                                client?</label>
-                            <input type="text" class="form-control mt-2" name="value" id="client-size">
-                        </div>
-                        <div class="form-group">
-                            <label class="mt-2 text-primary" for="client-revenue">What's your current
-                                revenue?</label>
-                            <input type="number" class="form-control mt-2" placeholder="$" name="revenue"
-                                id="client-revenue">
-                        </div>
-                        <div class="form-group">
-                            <label class="mt-2 text-primary" for="client-deadline">When do you need client
-                                by?</label>
-                            <input type="date" class="form-control mt-2" name="clients_date" id="client-deadline"
-                                min="<?php echo date('Y-m-d'); ?>">
-                        </div>
-                        <div class="form-group">
-                            <label class="mt-2 text-primary" for="client-uae">When can you be in UAE?</label>
-                            <input type="date" class="form-control mt-2" name="dubai_date2" id="client-uae"
-                                min="<?php echo date('Y-m-d'); ?>">
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-3">Send</button>
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <h2 class="text-light tinos-bold">Dubai's Leading Future Tech Investment Advisory Firm
+                        </h2><br>
+                        <a class="btn-primary mt-5" href="#" onclick="openModal()">Meet Investors In UAE</a>
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
-
-
-
-
-
-    <section class="background-section">
-
-        <div class="content">
-            <h1 class="text-dark tinos-bold text-center">About <em class="text-primary">DoubleMorgan</em></h1>
-            <p class="mb-4">DoubleMorgan is an advisory and consulting company that specializes in helping future
-                technology
-                companies (Blockchain & Crypto, Metaverse, FinTech, and AI) to meet Investors under one roof for them to
-                be able to create long-term business relationships.</p>
-            <a class="btn-primary" href="#">Learn More</a>
         </div>
-    </section>
 
-    <section class="services-stats">
+        <div id="myModal" class="popup">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 class="text-center tinos-regular">Inquiry Form</h2>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 stats">
-
-
-                    <div class="stat-box">
-                        <h2 class="text-center tinos-bold">$100m</h2>
-                        <h5 class="text-center">Assets Under Management</h5>
-                    </div>
-                    <div class="stat-box">
-                        <h2 class="text-center tinos-bold">650+</h2>
-                        <h5 class="text-center">Investments</h5>
-                    </div>
-                    <div class="stat-box">
-                        <h2 class="text-center tinos-bold">10+</h2>
-                        <h5 class="text-center">Flagship Funds</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 services">
-                    <section class="services ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h1 class="text-dark tinos-bold text-left">Our <em
-                                            class="text-primary">Services</em></h1>
-                                    <p class="text-left">Explore Our Expertise</p>
-                                    <hr class="border-secondary">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-3">
-                                            <h4 class="text-primary tinos-regular">Investment Advisory</h4>
-                                            <p class="">DoubleMorgan has been helping growth stage startups
-                                                and established companies the the future tech industries (blockchain &
-                                                crypto, fintech, metaverse and A.I) raise over $100M in the last 7 years
-                                                from UAE & Middle Eastern Investors.</p>
-                                        </li>
-                                        <hr class="border-secondary">
-
-                                        <li class="mb-3">
-                                            <h4 class="text-primary tinos-regular">Private Corporate Events</h4>
-                                            <p class="">DoubleMorgan runs private events for companies that
-                                                are established but need to make a bigger impact on the market in order
-                                                to gain large contracts with corporations & governments in the UAE.</p>
-                                        </li>
-                                        <hr class="border-secondary">
-
-                                        <li class="mb-3">
-                                            <h4 class="text-primary tinos-regular">Advertising in Blockchain</h4>
-                                            <p class="">Blockchain technology offers a more inventive
-                                                experience than traditional marketing & advertising. We help startups
-                                                and companies understand new web3 platforms and how to build their
-                                                advertising strategy.</p>
-                                        </li>
-                                        <hr class="border-secondary"><br>
-                                        <li class="mb-3">
-                                            <a class="btn-primary" href="#">Learn More</a>
-                                        </li>
-                                    </ul>
-
-
-
+            <form action="contactsendemail" method="POST" id="contactForm" autocomplete="off">
+                <div class="container">
+                    <div class="row">
+                        <div id="formSection">
+                            <div class="form-group">
+                                <label for="contact-name">Name <span class="required-asterisk">*</span></label>
+                                <input type="text" class="form-control" required name="name" id="contact-name"
+                                    placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">E-mail <span class="required-asterisk">*</span></label>
+                                <input type="email" class="form-control" required name="email" id="contact-email"
+                                    placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number">Phone number <span class="required-asterisk">*</span></label>
+                                <div class="input-group">
+                                    <select class="form-select" style="margin-top: 5px;" id="country-code"
+                                        aria-label="Country code">
+                                        <option value="+1" selected>+1 (US)</option>
+                                        <option value="+44">+44 (UK)</option>
+                                        <option value="+91">+91 (IN)</option>
+                                    </select>
+                                    <input type="text" class="form-control" id="phone-number-input"
+                                        placeholder="Phone number" aria-label="Phone number">
                                 </div>
                             </div>
+                            <button type="button" id="investmentButton" class="btn mt-3 btn-primary" disabled>Looking
+                                for Investment?</button>
+                            <button type="button" id="clientsButton" class="btn mt-3 btn-primary" disabled>Looking for
+                                Clients?</button>
                         </div>
-                    </section>
 
-                </div>
-            </div>
+                        <div id="investmentSection" style="display: none;">
+                            <!-- Add this where you want the back button to appear -->
+                            <button onclick="backModal()" class="btn btn-primary">
+                                <i class="fa fa-arrow-left"></i> Back
+                            </button>
 
-        </div>
-    </section>
-
-    <hr class="no-hr">
-
-
-    <section class="events-section">
-        <div class="container">
-            <h1 class="text-dark tinos-bold text-left">Our <em class="text-primary">Flagship</em> Events</h1>
-            <p class="text-left">Signature Events & Highlights</p>
-
-            <div class="row mt-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                    <div class="event-card">
-                        <div class="card-body">
-                            <img class="" height="20px" src="assets/mvs.png" alt="Event 1 Image">
-
-                            <p class=" mt-3">Metavsummit is the largest investor and strategic partner event that
-                                specializes in helping Web 3.0 Companies (Blockchain, Metaverse and NFTs) and Investors
-                                meet under one roof for them to be able to create long-term business relationships.</p>
-
-                            <a href="#" class="btn btn-primary mt-1">Visit Event Site</a>
+                            <div class="form-group">
+                                <label class="text-primary" for="contact-amount">How much do you need to
+                                    raise?</label>
+                                <input type="number" class="form-control mt-2" placeholder="$" name="amount"
+                                    id="contact-amount">
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2 text-primary" for="contact-raised">How much have you raised
+                                    already?</label>
+                                <input type="text" class="form-control mt-2"
+                                    placeholder="Ignore if you haven't raised yet." name="raised" id="contact-raised">
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2 text-primary" for="contact-funds">When do you need to raise funds
+                                    by?</label>
+                                <input type="date" class="form-control mt-2" name="funds_date" id="contact-funds"
+                                    min="<?php echo date('Y-m-d'); ?>">
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2 text-primary" for="contact-dubai">When can you be in UAE?</label>
+                                <input type="date" class="form-control mt-2" name="dubai_date" id="contact-dubai"
+                                    min="<?php echo date('Y-m-d'); ?>">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Send</button>
+                        </div>
+                        <div id="clientsSection" style="display: none;">
+                            <button onclick="backModal()" class="btn btn-primary">
+                                <i class="fa fa-arrow-left"></i> Back
+                            </button>
+                            <div class="form-group">
+                                <label class="text-primary" for="client-size">What should be the value of the
+                                    client?</label>
+                                <input type="text" class="form-control mt-2" name="value" id="client-size">
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2 text-primary" for="client-revenue">What's your current
+                                    revenue?</label>
+                                <input type="number" class="form-control mt-2" placeholder="$" name="revenue"
+                                    id="client-revenue">
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2 text-primary" for="client-deadline">When do you need client
+                                    by?</label>
+                                <input type="date" class="form-control mt-2" name="clients_date" id="client-deadline"
+                                    min="<?php echo date('Y-m-d'); ?>">
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2 text-primary" for="client-uae">When can you be in UAE?</label>
+                                <input type="date" class="form-control mt-2" name="dubai_date2" id="client-uae"
+                                    min="<?php echo date('Y-m-d'); ?>">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Send</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                    <div class="event-card">
-                        <div class="card-body">
-                            <img height="20px" src="assets/cvs.png" Event 2 Image">
+            </form>
+        </div>
 
-                            <p class=" mt-3">Cryptovsummit is the largest investor and strategic partner event
-                                based in Dubai that helps crypto companies build long-term business relationships. It
-                                offers key networking opportunities and insights into the latest cryptocurrency
-                                innovations.</p>
 
-                            <a href="#" class="btn btn-primary mt-1">Visit Event Site</a>
+
+
+
+        <section class="background-section">
+
+            <div class="content">
+                <h1 class="text-dark tinos-bold text-center">About <em class="text-primary">DoubleMorgan</em></h1>
+                <p class="mb-4">DoubleMorgan is an advisory and consulting company that specializes in helping future
+                    technology
+                    companies (Blockchain & Crypto, Metaverse, FinTech, and AI) to meet Investors under one roof for
+                    them to
+                    be able to create long-term business relationships.</p>
+                <a class="btn-primary" href="#">Learn More</a>
+            </div>
+        </section>
+
+        <section class="services-stats">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 stats">
+
+
+                        <div class="stat-box">
+                            <h2 class="text-center tinos-bold">$100m</h2>
+                            <h5 class="text-center">Assets Under Management</h5>
+                        </div>
+                        <div class="stat-box">
+                            <h2 class="text-center tinos-bold">650+</h2>
+                            <h5 class="text-center">Investments</h5>
+                        </div>
+                        <div class="stat-box">
+                            <h2 class="text-center tinos-bold">10+</h2>
+                            <h5 class="text-center">Flagship Funds</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 services">
+                        <section class="services ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 class="text-dark tinos-bold text-left">Our <em
+                                                class="text-primary">Services</em></h1>
+                                        <p class="text-left">Explore Our Expertise</p>
+                                        <hr class="border-secondary">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <h4 class="text-primary tinos-regular">Investment Advisory</h4>
+                                                <p class="">DoubleMorgan has been helping growth stage startups
+                                                    and established companies the the future tech industries (blockchain
+                                                    &
+                                                    crypto, fintech, metaverse and A.I) raise over $100M in the last 7
+                                                    years
+                                                    from UAE & Middle Eastern Investors.</p>
+                                            </li>
+                                            <hr class="border-secondary">
+
+                                            <li class="mb-3">
+                                                <h4 class="text-primary tinos-regular">Private Corporate Events</h4>
+                                                <p class="">DoubleMorgan runs private events for companies that
+                                                    are established but need to make a bigger impact on the market in
+                                                    order
+                                                    to gain large contracts with corporations & governments in the UAE.
+                                                </p>
+                                            </li>
+                                            <hr class="border-secondary">
+
+                                            <li class="mb-3">
+                                                <h4 class="text-primary tinos-regular">Advertising in Blockchain</h4>
+                                                <p class="">Blockchain technology offers a more inventive
+                                                    experience than traditional marketing & advertising. We help
+                                                    startups
+                                                    and companies understand new web3 platforms and how to build their
+                                                    advertising strategy.</p>
+                                            </li>
+                                            <hr class="border-secondary"><br>
+                                            <li class="mb-3">
+                                                <a class="btn-primary" href="#">Learn More</a>
+                                            </li>
+                                        </ul>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="no-hr">
+
+
+        <section class="events-section">
+            <div class="container">
+                <h1 class="text-dark tinos-bold text-left">Our <em class="text-primary">Flagship</em> Events</h1>
+                <p class="text-left">Signature Events & Highlights</p>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="event-card">
+                            <div class="card-body">
+                                <img class="" height="20px" src="assets/mvs.png" alt="Event 1 Image">
+
+                                <p class=" mt-3">Metavsummit is the largest investor and strategic partner event that
+                                    specializes in helping Web 3.0 Companies (Blockchain, Metaverse and NFTs) and
+                                    Investors
+                                    meet under one roof for them to be able to create long-term business relationships.
+                                </p>
+
+                                <a href="#" class="btn btn-primary mt-1">Visit Event Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="event-card">
+                            <div class="card-body">
+                                <img height="20px" src="assets/cvs.png" Event 2 Image">
+
+                                <p class=" mt-3">Cryptovsummit is the largest investor and strategic partner event
+                                    based in Dubai that helps crypto companies build long-term business relationships.
+                                    It
+                                    offers key networking opportunities and insights into the latest cryptocurrency
+                                    innovations.</p>
+
+                                <a href="#" class="btn btn-primary mt-1">Visit Event Site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="logo-slider mt-3">
-            <div class="logo-slider-inner customer-logos">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-                <img src="assets/logo-black.png" alt="Logo 1">
-            </div>
-        </div>
-    </section>
-
-
-    
-
-
-    <hr class="no-hr">
-
-
-    <div class="container ">
-        <h1 class="text-dark tinos-bold text-center">Our <em class="text-primary">Companies</em> Portfolio</h1>
-        <p class="text-center">Explore our handpicked investment opportunities, chosen for their growth potential and
-            market impact. Discover how they can help achieve your financial goals.</p>
-
-        <div class="row">
-            <!-- Company 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/company.png" class="p-3card-img-top" alt="Company 1 Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Company Name</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-dollar-sign"></i> Revenue:</td>
-                                        <td>$500k - $1M</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-map-marker-alt"></i> Location:</td>
-                                        <td>Dubai</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-chart-line"></i> Annual Growth:</td>
-                                        <td>15%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-users"></i> Employees:</td>
-                                        <td>100</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="card-text">Description of Company 1, highlighting key features and investment
-                            potential.</p>
-                        <a href="#" class="btn btn-primary">Inquire</a>
-                    </div>
+            <div class="logo-slider mt-3">
+                <div class="logo-slider-inner customer-logos">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
+                    <img src="assets/logo-black.png" alt="Logo 1">
                 </div>
             </div>
-            <!-- Company 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/company.png" class="card-img-top" alt="Company 1 Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Company Name</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-dollar-sign"></i> Revenue:</td>
-                                        <td>$1M - $5M</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-map-marker-alt"></i> Location:</td>
-                                        <td>Abu Dhabi</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-chart-line"></i> Annual Growth:</td>
-                                        <td>20%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-users"></i> Employees:</td>
-                                        <td>250</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="card-text">Description of Company 2, highlighting key features and investment
-                            potential.</p>
-                        <a href="#" class="btn btn-primary">Inquire</a>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Company 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/company.png" class="card-img-top" alt="Company 1 Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Company Name</h5>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-dollar-sign"></i> Revenue:</td>
-                                        <td>$200k - $500k</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-map-marker-alt"></i> Location:</td>
-                                        <td>Dubai</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-chart-line"></i> Annual Growth:</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-users"></i> Employees:</td>
-                                        <td>50</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="card-text">Description of Company 3, highlighting key features and investment
-                            potential.</p>
-                        <a href="#" class="btn btn-primary">Inquire</a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-2">
-                <a href="#" class="btn btn-primary">More Companies</a>
-            </div>
-        </div>
-    </div>
-
-    <hr class="no-hr">
+        </section>
 
 
-    <div class="container clients">
-        <h1 class="text-dark tinos-bold text-center">Our <em class="text-primary">Clients</em></h1>
-        <p class="text-center">Trusted by Leading Clients Worldwide</p>
 
-        <div class="row mt-4">
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card client-card">
-                    <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <hr class="no-hr">
 
-    <section id="blogs" class="blogs-section py-5">
-        <div class="container">
+        <hr class="no-hr">
+
+
+        <div class="container ">
+            <h1 class="text-dark tinos-bold text-center">Our <em class="text-primary">Companies</em> Portfolio</h1>
+            <p class="text-center">Explore our handpicked investment opportunities, chosen for their growth potential
+                and
+                market impact. Discover how they can help achieve your financial goals.</p>
+
             <div class="row">
-                <!-- Left Column: Blog List -->
-                <div class="col-lg-6">
-                    <h1 class="text-dark tinos-bold text-left">Latest
-                        <em class="text-primary"> Blogs</em>
-                    </h1>
-                    <p class="text-left">Insights & Stories from Our Blog</p>
-
-                    <!-- Blog Card 1 -->
-                    <div class="card mb-4">
+                <!-- Company 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/company.png" class="p-3card-img-top" alt="Company 1 Logo">
                         <div class="card-body">
-                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the
-                                UAE?</h4>
-                            <p class="card-text">
-                                I provided exceptional value. -I go all in with helping them restructure their family
-                                offices.-I go all in with helping them market their businesses.. <a href=""
-                                    class="">Read more</a>
-                            </p>
+                            <h5 class="card-title">Company Name</h5>
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-dollar-sign"></i> Revenue:</td>
+                                            <td>$500k - $1M</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-map-marker-alt"></i> Location:</td>
+                                            <td>Dubai</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-chart-line"></i> Annual Growth:</td>
+                                            <td>15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-users"></i> Employees:</td>
+                                            <td>100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="card-text">Description of Company 1, highlighting key features and investment
+                                potential.</p>
+                            <a href="#" class="btn btn-primary">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Company 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/company.png" class="card-img-top" alt="Company 1 Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Company Name</h5>
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-dollar-sign"></i> Revenue:</td>
+                                            <td>$1M - $5M</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-map-marker-alt"></i> Location:</td>
+                                            <td>Abu Dhabi</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-chart-line"></i> Annual Growth:</td>
+                                            <td>20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-users"></i> Employees:</td>
+                                            <td>250</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="card-text">Description of Company 2, highlighting key features and investment
+                                potential.</p>
+                            <a href="#" class="btn btn-primary">Inquire</a>
 
                         </div>
                     </div>
-
-                    <!-- Blog Card 2 -->
-                    <div class="card mb-4">
+                </div>
+                <!-- Company 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/company.png" class="card-img-top" alt="Company 1 Logo">
                         <div class="card-body">
-                            <h4 class="card-title">Time to Sell the Business and Sip Cocktails into the Sunset?</h4>
-                            <p class="card-text">
-                                I provided exceptional value. -I go all in with helping them restructure their family
-                                offices.-I go all in with helping them market their businesses.. <a href=""
-                                    class="">Read more</a>
-                            </p>
+                            <h5 class="card-title">Company Name</h5>
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-dollar-sign"></i> Revenue:</td>
+                                            <td>$200k - $500k</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-map-marker-alt"></i> Location:</td>
+                                            <td>Dubai</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-chart-line"></i> Annual Growth:</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-users"></i> Employees:</td>
+                                            <td>50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="card-text">Description of Company 3, highlighting key features and investment
+                                potential.</p>
+                            <a href="#" class="btn btn-primary">Inquire</a>
                         </div>
                     </div>
-
-                    <!-- Blog Card 3 -->
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="card-title">How did I build a network of investors worth more than $3B in the
-                                UAE?</h4>
-                            <p class="card-text">
-                                I provided exceptional value. -I go all in with helping them restructure their family
-                                offices.-I go all in with helping them market their businesses.. <a href=""
-                                    class="">Read more</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <a href="/blogs" class="btn btn-primary">View All Blogs</a>
+                </div>
+                <div class="text-center mt-2">
+                    <a href="#" class="btn btn-primary">More Companies</a>
                 </div>
             </div>
-
         </div>
-    </section>
+
+        <hr class="no-hr">
 
 
-    <hr class="no-hr">
+        <div class="container clients">
+            <h1 class="text-dark tinos-bold text-center">Our <em class="text-primary">Clients</em></h1>
+            <p class="text-center">Trusted by Leading Clients Worldwide</p>
 
-
-
-    <section class="image-section">
-        <div class="container">
-            <h1 class="text-dark tinos-bold text-center">DoubleMorgan <em class="text-primary">Summits</em></h1>
-            <p class="text-center">Retrospective: Our Past Events</p>
             <div class="row mt-4">
-                <!-- First Column: Image 1 -->
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
-                    <img src="assets/summit1.webp" alt="Image 1" class="img-fluid w-100">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
                 </div>
-                <!-- Second Column: Image 2 -->
-                <div class="col-12 col-md-6">
-                    <img src="assets/summit2.webp" alt="Image 2" class="img-fluid w-100">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card client-card">
+                        <img src="assets/logo-black.png" class="card-img-top" alt="Client Logo">
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <hr class="no-hr">
+        <hr class="no-hr">
+
+        <section id="blogs" class="blogs-section py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Column: Blog List -->
+                    <div class="col-lg-6">
+                        <h1 class="text-dark tinos-bold text-left">Latest
+                            <em class="text-primary"> Blogs</em>
+                        </h1>
+                        <p class="text-left">Insights & Stories from Our Blog</p>
+
+                        <!-- Blog Card 1 -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">How did I build a network of investors worth more than $3B in the
+                                    UAE?</h4>
+                                <p class="card-text">
+                                    I provided exceptional value. -I go all in with helping them restructure their
+                                    family
+                                    offices.-I go all in with helping them market their businesses.. <a href=""
+                                        class="">Read more</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 2 -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Time to Sell the Business and Sip Cocktails into the Sunset?</h4>
+                                <p class="card-text">
+                                    I provided exceptional value. -I go all in with helping them restructure their
+                                    family
+                                    offices.-I go all in with helping them market their businesses.. <a href=""
+                                        class="">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 3 -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">How did I build a network of investors worth more than $3B in the
+                                    UAE?</h4>
+                                <p class="card-text">
+                                    I provided exceptional value. -I go all in with helping them restructure their
+                                    family
+                                    offices.-I go all in with helping them market their businesses.. <a href=""
+                                        class="">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="/blogs" class="btn btn-primary">View All Blogs</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
 
-    <div class="logo-slider">
-        <h1 class="text-dark tinos-bold text-center">As <em class="text-primary">Seen</em> On</h1>
-        <p class="text-center">Our projects featured in global media</p>
-        <div class="logo-slider-inner customer-logos mt-5">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
-            <img src="assets/logo-black.png" alt="Logo 1">
+        <hr class="no-hr">
+
+
+
+        <section class="image-section">
+            <div class="container">
+                <h1 class="text-dark tinos-bold text-center">DoubleMorgan <em class="text-primary">Summits</em></h1>
+                <p class="text-center">Retrospective: Our Past Events</p>
+                <div class="row mt-4">
+                    <!-- First Column: Image 1 -->
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <img src="assets/summit1.webp" alt="Image 1" class="img-fluid w-100">
+                    </div>
+                    <!-- Second Column: Image 2 -->
+                    <div class="col-12 col-md-6">
+                        <img src="assets/summit2.webp" alt="Image 2" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="no-hr">
+
+
+        <div class="logo-slider">
+            <h1 class="text-dark tinos-bold text-center">As <em class="text-primary">Seen</em> On</h1>
+            <p class="text-center">Our projects featured in global media</p>
+            <div class="logo-slider-inner customer-logos mt-5">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+                <img src="assets/logo-black.png" alt="Logo 1">
+            </div>
         </div>
-    </div>
 
 
 
 
-    <hr class="no-hr">
+        <hr class="no-hr">
 
 
 
-    <section class="contact-section pb-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                    <div class="card contact-card form-container">
-                        <h1 class="text-dark tinos-bold text-center">Contact <em class="text-primary">Us</em></h1>
-                        <p class="text-center">Get in Touch with Us</p>
+        <section class="contact-section pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="card contact-card form-container">
+                            <h1 class="text-dark tinos-bold text-center">Contact <em class="text-primary">Us</em></h1>
+                            <p class="text-center">Get in Touch with Us</p>
 
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4"
-                                    placeholder="Your Message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class=" text-white pt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo and Office Location -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <img height="50px" src="assets/logo-white.png" alt="Logo" class="mb-2">
+                        <form class="form-inline">
+                            <h5 class="tinos-regular mt-3">Subscribe to receive updates</h5>
+                            <input type="email" class="form-control mr-2" placeholder="Enter your email">
+                            <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
                         </form>
                     </div>
+
+                    <!-- People Driven -->
+                    <div class="col-12 col-md-2 mb-2">
+                        <h5 class="tinos-bold text-primary">People Driven</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">About DoubleMorgan</a></li>
+                            <li><a href="#" class="text-white">Talent Programs</a></li>
+                            <li><a href="#" class="text-white">Our Team</a></li>
+                            <li><a href="#" class="text-white">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Private Equity -->
+                    <div class="col-12 col-md-2 mb-2">
+                        <h5 class="tinos-bold text-primary">Private Equity</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Portfolio</a></li>
+                            <li><a href="#" class="text-white">Our Investing</a></li>
+                            <li><a href="#" class="text-white">Our Impact</a></li>
+                            <li><a href="#" class="text-white">News & Insights</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- General Info -->
+                    <div class="col-12 col-md-2 mb-2">
+                        <h5 class="tinos-bold text-primary">General Info</h5>
+                        <ul class="list-unstyled">
+                            <p>Opal Tower office 303 - Business Bay - Dubai - United Arab Emirates</p>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2 mb-2">
+                        <h5 class="tinos-bold text-primary">Follow Us</h5>
+                        <ul class="social-network social-circle list-unstyled d-flex">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" class="mx-2 icoLinkedin" title="Linkedin"><i
+                                        class="fa-brands fa-linkedin-in"></i></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Border -->
+                <hr class="border-secondary">
+
+                <!-- Terms and Copyright -->
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p><a href="#" class="text-white underline">Terms, Conditions & Privacy Policy</a></p>
+                        <p>© Double Morgan 2024. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
+    </div>
 
-    <!-- Footer -->
-    <footer class=" text-white pt-5">
-        <div class="container">
-            <div class="row">
-                <!-- Logo and Office Location -->
-                <div class="col-12 col-md-4 mb-4">
-                    <img height="50px" src="assets/logo-white.png" alt="Logo" class="mb-2">
-                    <form class="form-inline">
-                        <h5 class="tinos-regular mt-3">Subscribe to receive updates</h5>
-                        <input type="email" class="form-control mr-2" placeholder="Enter your email">
-                        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
-                    </form>
-                </div>
-
-                <!-- People Driven -->
-                <div class="col-12 col-md-2 mb-2">
-                    <h5 class="tinos-bold text-primary">People Driven</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">About DoubleMorgan</a></li>
-                        <li><a href="#" class="text-white">Talent Programs</a></li>
-                        <li><a href="#" class="text-white">Our Team</a></li>
-                        <li><a href="#" class="text-white">Careers</a></li>
-                    </ul>
-                </div>
-
-                <!-- Private Equity -->
-                <div class="col-12 col-md-2 mb-2">
-                    <h5 class="tinos-bold text-primary">Private Equity</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Portfolio</a></li>
-                        <li><a href="#" class="text-white">Our Investing</a></li>
-                        <li><a href="#" class="text-white">Our Impact</a></li>
-                        <li><a href="#" class="text-white">News & Insights</a></li>
-                    </ul>
-                </div>
-
-                <!-- General Info -->
-                <div class="col-12 col-md-2 mb-2">
-                    <h5 class="tinos-bold text-primary">General Info</h5>
-                    <ul class="list-unstyled">
-                        <p>Opal Tower office 303 - Business Bay - Dubai - United Arab Emirates</p>
-
-                    </ul>
-                </div>
-
-                <div class="col-12 col-md-2 mb-2">
-                    <h5 class="tinos-bold text-primary">Follow Us</h5>
-                    <ul class="social-network social-circle list-unstyled d-flex">
-                     <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa-brands fa-instagram"></i></a></li>
-                     <li><a href="#" class="mx-2 icoLinkedin" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Border -->
-            <hr class="border-secondary">
-
-            <!-- Terms and Copyright -->
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <p><a href="#" class="text-white underline">Terms, Conditions & Privacy Policy</a></p>
-                    <p>© Double Morgan 2024. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</div>
-
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-       <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
