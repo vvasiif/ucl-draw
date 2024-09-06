@@ -36,6 +36,32 @@ function backModal() {
     // });
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const phoneInput = document.querySelector("#phone");
+  
+    const iti = window.intlTelInput(phoneInput, {
+      initialCountry: "auto",
+      geoIpLookup: function (success, failure) {
+        fetch('https://ipinfo.io', {
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (ipjson) {
+            success(ipjson.country);
+          })
+          .catch(function () {
+            success("us");
+          });
+      },
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js" // for formatting/validation
+    });
+  });
+  
+
 
 document.getElementById('investmentButton').onclick = function () {
     document.getElementById('investmentSection').style.display = 'block';
