@@ -471,12 +471,13 @@ a {
     z-index: 1;
     left: 50%;
     top: 45%;
-    width: 400px;
+    width: 360px;
     height: fit-content;
     overflow: auto;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     transform: translate(-50%, -50%);
+    border-radius: 20px;
 }
 
 
