@@ -790,6 +790,30 @@ a {
     border-radius: 8px;
 }
 
+.contact-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contact-link:hover, .fa-solid:hover {
+    color: #651bf8;
+}
+
+.fa-solid {
+    margin-bottom: 10px;
+}
+
+
 .card-img-custom {
     height: 300px;
     object-fit: cover;
@@ -815,3 +839,71 @@ a {
 footer {
     background-color: #180047;
 }
+
+.form-control{
+    width: 90%;
+}
+
+@media (max-width: 767.98px) {
+    .form-control{
+        width: 100%;
+    }
+    
+
+}
+
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i {
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+  
