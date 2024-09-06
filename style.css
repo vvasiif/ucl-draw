@@ -165,7 +165,6 @@ a {
 }
 
 
-
 .input-group select,
 .input-group input {
     height: 38px; 
@@ -490,17 +489,12 @@ a {
     top: 55%;
     width: 380px;
     height: fit-content;
-    /* overflow: auto; */
+    overflow: auto;
     background-color: rgba(255, 255, 255, 0.842);
     padding: 20px;
     transform: translate(-50%, -50%);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-}
-.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
-    padding-right: 6px;
-    padding-left: 152px !important;
-    margin-left: 0;
 }
 
 
