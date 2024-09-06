@@ -79,3 +79,30 @@ $(document).ready(function () {
         }]
     });
 });
+
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    const content = document.getElementById('content');
+    const loadingBar = document.getElementById('loading-bar');
+
+    let progress = 0;
+
+    const interval = setInterval(() => {
+        progress += 10; // Gradually increase progress
+        loadingBar.style.width = `${progress}%`; // Smoothly update the width of the loading bar
+        
+        if (progress >= 100) {
+            clearInterval(interval);
+
+            // Fade out the preloader
+            preloader.style.opacity = '0';
+
+            // After the fade-out, hide the preloader and show the content
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                content.style.display = 'block';
+            }, 500); // Match fade-out duration
+        }
+    }, 100); // Loading bar updates every 100ms for a smooth transition
+});
