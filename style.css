@@ -159,8 +159,8 @@ a {
     font-weight: bold;
 }
 
-.disabled{
-    background-color: grey !important;
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    background-color: rgb(80, 80, 80) !important;
 }
 
 .input-group select,
