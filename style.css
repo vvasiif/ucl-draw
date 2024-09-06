@@ -317,6 +317,7 @@ a {
     font-weight: 700;
 }
 
+
 /* Navbar default padding */
 .navbar {
     padding-top: 1rem;
@@ -326,8 +327,8 @@ a {
 
 /* Shrinked navbar padding */
 .navbar.shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 .navbar-toggler {

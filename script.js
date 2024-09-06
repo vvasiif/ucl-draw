@@ -106,3 +106,38 @@ window.addEventListener('load', () => {
         }
     }, 100); // Loading bar updates every 100ms for a smooth transition
 });
+
+
+$(document).ready(function() {
+    // Function to load service based on URL hash
+    function loadServiceFromHash() {
+        var hash = window.location.hash.substring(1); // Get the hash value without '#'
+        if (hash) {
+            // Remove active class from all services and links
+            $('.service-detail').removeClass('active');
+            $('a[data-service]').removeClass('active');
+
+            // Add active class to the selected service and link
+            $('#' + hash).addClass('active');
+            $('a[data-service="' + hash + '"]').addClass('active');
+        }
+    }
+
+    // Load service based on URL hash on page load
+    loadServiceFromHash();
+
+    // Handle click events on service links
+    $('a[data-service]').on('click', function(event) {
+        event.preventDefault();
+        var serviceId = $(this).data('service');
+        window.location.hash = serviceId;
+
+        // Remove active class from all services and links
+        $('.service-detail').removeClass('active');
+        $('a[data-service]').removeClass('active');
+
+        // Add active class to the selected service and link
+        $('#' + serviceId).addClass('active');
+        $(this).addClass('active');
+    });
+});
