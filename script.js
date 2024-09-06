@@ -152,42 +152,42 @@ window.addEventListener('load', () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const listItems = document.querySelectorAll(".list-group-item");
+    const serviceContents = document.querySelectorAll(".service-content");
 
-
-$(document).ready(function() {
-    // Function to load service based on URL hash
-    function loadServiceFromHash() {
-        var hash = window.location.hash.substring(1); // Get the hash value without '#'
-        if (hash) {
-            // Remove active class from all services and links
-            $('.service-detail').removeClass('active');
-            $('a[data-service]').removeClass('active');
-
-            // Add active class to the selected service and link
-            $('#' + hash).addClass('active');
-            $('a[data-service="' + hash + '"]').addClass('active');
-        }
+    // Function to show the selected service and hide others
+    function showService(serviceId) {
+        serviceContents.forEach(content => {
+            content.style.display = "none"; // Hide all contents
+        });
+        document.querySelector(`#${serviceId}`).style.display = "block"; // Show the selected service
     }
 
-    // Load service based on URL hash on page load
-    loadServiceFromHash();
+    // Function to activate the clicked list item
+    function activateListItem(clickedItem) {
+        listItems.forEach(item => {
+            item.classList.remove("active"); // Remove active class from all items
+        });
+        clickedItem.classList.add("active"); // Add active class to the clicked item
+    }
 
-    // Handle click events on service links
-    $('a[data-service]').on('click', function(event) {
-        event.preventDefault();
-        var serviceId = $(this).data('service');
-        window.location.hash = serviceId;
-
-        // Remove active class from all services and links
-        $('.service-detail').removeClass('active');
-        $('a[data-service]').removeClass('active');
-
-        // Add active class to the selected service and link
-        $('#' + serviceId).addClass('active');
-        $(this).addClass('active');
+    // Add event listeners to each list item
+    listItems.forEach(item => {
+        item.addEventListener("click", function(e) {
+            e.preventDefault();
+            const serviceId = this.getAttribute("data-service"); // Get service ID from data attribute
+            activateListItem(this); // Activate the clicked item
+            showService(serviceId); // Show the corresponding service details
+        });
     });
-    
+
+    // By default, show the first service's details
+    showService("investment-advisory");
 });
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById('contact-name');
     const emailInput = document.getElementById('contact-email');
