@@ -17,6 +17,8 @@ function closeModal() {
     document.getElementById('formSection').style.display = 'block';
     document.getElementById('clientsSection').style.display = 'none';
     document.getElementById('investmentSection').style.display = 'none';
+
+    
 }
 
 function backModal() {
@@ -24,14 +26,14 @@ function backModal() {
     document.getElementById('clientsSection').style.display = 'none';
     document.getElementById('investmentSection').style.display = 'none';
 
-    const formFields = document.querySelectorAll('#formSection input, #formSection select, #formSection textarea');
-    formFields.forEach(field => {
-        if (field.type === 'checkbox' || field.type === 'radio') {
-            field.checked = false;
-        } else {
-            field.value = '';
-        }
-    });
+    // const formFields = document.querySelectorAll('#formSection input, #formSection select, #formSection textarea');
+    // formFields.forEach(field => {
+    //     if (field.type === 'checkbox' || field.type === 'radio') {
+    //         field.checked = false;
+    //     } else {
+    //         field.value = '';
+    //     }
+    // });
 }
 
 
@@ -163,7 +165,7 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById('contact-name');
     const emailInput = document.getElementById('contact-email');
-    const phoneInput = document.getElementById('phone-number-input'); // Updated ID
+    const phoneInput = document.getElementById('phone-number-input'); 
     const investmentButton = document.getElementById('investmentButton');
     const clientsButton = document.getElementById('clientsButton');
 
