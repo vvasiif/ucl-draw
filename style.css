@@ -951,6 +951,17 @@ footer {
     padding: 50px 30px;
 }
 
+.subscribe{
+    max-width: 90% !important;
+}
+
+@media (max-width: 767.98px) {
+    .subscribe{
+        max-width: 100% !important;
+    }
+    
+}
+
 .get-in-touch a{
     width: 100%;
     height: 200px;
