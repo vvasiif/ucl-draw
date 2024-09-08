@@ -354,6 +354,9 @@ a {
 .navbar.shrink {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+    background-color: #ffffffb6 !important;
+    backdrop-filter: blur(10px) !important;
+    transition: background-color 1s ease, backdrop-filter 1s ease;
 }
 
 .navbar-toggler {
