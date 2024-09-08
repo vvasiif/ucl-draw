@@ -196,6 +196,7 @@ a {
 }
 
 
+
 /* Preloader Styles */
 #preloader {
     position: fixed;
@@ -802,6 +803,13 @@ a {
 .card-img-top {
    border-radius: 20px;
 }
+
+.company-logo {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
 
 /* .events-section {
     padding: 60px 0;
