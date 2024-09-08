@@ -203,14 +203,15 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, #8c52ff63, #fff);
+    /* background: #fff; */
+    background: linear-gradient(to top, #dfcfff, #fff);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 9999;
     opacity: 1;
-    transition: opacity 2.5s ease; /* Fade out transition */
+    transition: opacity 0.5s ease; /* Fade out transition */
 }
 
 #logo {
@@ -239,6 +240,18 @@ a {
 #content {
     display: none; /* Hidden until preloader is gone */
 }
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Move content down by 50px */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Animate back to normal position */
+}
+
 
 
 
@@ -305,6 +318,51 @@ a {
     right: 20px;
     font-size: 3.5rem;
     cursor: pointer;
+}
+
+
+.event-tickets-strip {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 5px 0;
+    background: linear-gradient(45deg, #ff6f61, #d83f63);
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden; /* Ensures content stays within bounds */
+}
+
+.event-tickets-strip a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0;
+    display: inline-block;
+    animation: popText 1s ease-in-out infinite;
+}
+
+.event-tickets-strip p {
+    margin: 0;
+    animation: popText 1s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+@keyframes popText {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 /* Ensure the navbar toggler is on top */
@@ -537,6 +595,36 @@ a {
     background-image: linear-gradient(to top, #8c52ff7a, #fff);
 }
 
+.client-card-wrapper {
+    display: none;
+}
+
+.client-card-wrapper.show {
+    display: block;
+}
+
+#load-more {
+    display: none;
+}
+
+
+.error-page {
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 8rem;
+    color: #333;
+    margin: 50px 0px;
+}
+
+.error-page p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+
+
 .background-section {
     display: flex;
     justify-content: center;
@@ -704,17 +792,16 @@ a {
     background-image: linear-gradient(to bottom, #8c52ff2a, #8c52ff33);
     transition: all 0.3s ease;
     border: none;
-    height: 200px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-/* .card-img-top {
-    max-height: 100%;
-    max-width: 100%;
-} */
+.card-img-top {
+   border-radius: 20px;
+}
 
 /* .events-section {
     padding: 60px 0;
@@ -739,7 +826,19 @@ a {
     font-size: 1rem;
 }
 
+.event-img img{
+height: 200px;
+width: 400px;
+object-fit: cover;
+overflow: hidden;
+border-radius: 15PX;
+border: 2px solid #8C52FF;
+}
 
+.customer-logos img{
+    border-radius: 15PX;
+    border: 2px solid #8C52FF;
+    }
 
 .services-stats {
     background: url('assets/bg-2.webp') no-repeat right center;
@@ -962,6 +1061,10 @@ footer {
     .subscribe{
         max-width: 100% !important;
     }
+
+    .mobile-align{
+        text-align: left !important;
+    }
     
 }
 
@@ -974,7 +1077,8 @@ footer {
 /* footer social icons */
 
 .social-network a.icoFacebook:hover {
-    background-color: #3B5998;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
   }
   
   .social-network a.icoLinkedin:hover {

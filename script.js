@@ -124,6 +124,29 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.event-img').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+
 
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
@@ -215,4 +238,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize button state on page load
     checkFormCompletion();
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.content-section');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                entry.target.classList.remove('hidden');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const clientCards = document.querySelectorAll('.client-card-wrapper');
+    const loadMoreButton = document.getElementById('load-more');
+    const initialDisplayCount = 12;
+    
+    // Display only the first 24 cards by default
+    clientCards.forEach((card, index) => {
+        if (index < initialDisplayCount) {
+            card.classList.add('show');
+        }
+    });
+
+    // Show "Load More" button if there are more than initialDisplayCount cards
+    if (clientCards.length > initialDisplayCount) {
+        loadMoreButton.style.display = 'inline-block';
+    }
+
+    // Add event listener for "Load More" button
+    loadMoreButton.addEventListener('click', () => {
+        clientCards.forEach(card => {
+            card.classList.add('show');
+        });
+        loadMoreButton.style.display = 'none'; // Hide the button after showing all cards
+    });
 });
